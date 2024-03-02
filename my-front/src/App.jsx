@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <TestHead></TestHead>
+      <TestHead text="Welcome" color="green"></TestHead>
       <div>
         <h2>{header}</h2>
         <p>{info}</p>
