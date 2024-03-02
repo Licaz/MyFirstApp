@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function TestHead(Props) {
+export default function TestHead({ text, color }) {
   const [headerText, setHeaderText] = useState("My component one");
 
-  return <h1 className={props.color}> {props.text} </h1>;
+  return <h1 className={color}> {text} </h1>;
 }
