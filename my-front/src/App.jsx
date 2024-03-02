@@ -1,17 +1,23 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+//import reactLogo from "./assets/react.svg";
+//import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  let header = "Depression and Anxiety Disorder";
+  let info =
+    " There are long-term condictions rather than an specitif event. Take the quizz below and check if you are presenting the symptoms.";
+
   return (
     <>
       <div>
-        <p>Welcome to Mental Health Quizz</p>
+        <h2>{header}</h2>
+        <p>{info}</p>
       </div>
       <h1>Mental Healt Quizz</h1>
+      <h3>{header}</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
