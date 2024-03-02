@@ -27,7 +27,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to l earn more
+        Please consult the HSE for more information
       </p>
     </>
   );
