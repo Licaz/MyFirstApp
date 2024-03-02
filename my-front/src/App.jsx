@@ -2,6 +2,7 @@ import { useState } from "react";
 //import reactLogo from "./assets/react.svg";
 //import viteLogo from "/vite.svg";
 import "./App.css";
+import TestHead from "./components/TestHead";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <TestHead></TestHead>
       <div>
         <h2>{header}</h2>
         <p>{info}</p>
