@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <div>
-        <p>Hello my app</p>
+        <p>Welcome to Mental Health Quizz</p>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Mental Healt Quizz</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -21,7 +21,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to l earn more
       </p>
     </>
   );
