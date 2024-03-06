@@ -61,3 +61,5 @@ export default function SymptomsList() {
     </>
   );
 }
+
+//<input class="styled" type="button" value="Submit" />
