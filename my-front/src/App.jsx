@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./App.css";
 import TestHead from "./components/TestHead";
 import SymptomsList from "./components/symptomsList"; // new
-//import Definition from "./components/Definition"; // new
+import Definition from "./components/Definition"; // new
 
 function App() {
   const [count, setCount] = useState(0);
