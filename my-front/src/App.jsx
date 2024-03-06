@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./App.css";
 import TestHead from "./components/TestHead";
 import SymptomsList from "./components/symptomsList"; // new
+//import Definition from "./components/Definition"; // new
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+      <Definition />
       <SymptomsList />
       <p className="read-the-docs">
         Please consult the HSE for more information
