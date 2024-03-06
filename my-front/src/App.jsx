@@ -28,6 +28,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+      <SymptomsList />
       <p className="read-the-docs">
         Please consult the HSE for more information
       </p>
