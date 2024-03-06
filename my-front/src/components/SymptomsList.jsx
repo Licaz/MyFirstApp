@@ -37,9 +37,11 @@ import "./SymptomList.css";
 
 export default function SymptomsList() {
   return (
-    <div>
-      <li>SympDep</li>
-      <li>SympAnx</li>
-    </div>
+    <>
+      <div>
+        <li>SympDep</li>
+        <li>SympAnx</li>
+      </div>
+    </>
   );
 }
