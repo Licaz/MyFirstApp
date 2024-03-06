@@ -3,7 +3,7 @@ import { useState } from "react";
 //import viteLogo from "/vite.svg";
 import "./App.css";
 import TestHead from "./components/TestHead";
-import SymptomsList from "./components/symptomsList"; // new
+import SymptomsList from "./components/SymptomsList"; // new
 import Definition from "./components/Definition"; // new
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
   let header = "Depression and Anxiety Disorder";
   let info =
-    " There are long-term condictions rather than an specitif event. Take the quizz below and check if you are presenting the symptoms.";
+    " There are long-term conditions rather than a specitif event. Take the quiz below and check if you are presenting the symptoms.";
 
   return (
     <>
@@ -20,15 +20,12 @@ function App() {
         <h2>{header}</h2>
         <p>{info}</p>
       </div>
-      <h1>Mental Healt Quizz</h1>
+      <h1>Mental Healt Quiz</h1>
       <h3>{header}</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
       <Definition />
       <SymptomsList />

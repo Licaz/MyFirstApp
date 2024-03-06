@@ -1,10 +1,10 @@
 import React from "react";
-import "./Definiton.css";
+import "./Definition.css";
 
 export default function Definition() {
   return (
     <>
-      <h3>Clinical Depression</h3>
+      <h2>Clinical Depression</h2>
       <p>
         Depressive disorder, also known as depression is a common mental
         disorder. It involves a depressed mood or loss of pleasure or interest
@@ -12,7 +12,7 @@ export default function Definition() {
         Organization.
       </p>
 
-      <h3>Anxiety Disorder</h3>
+      <h2>Anxiety Disorder</h2>
       <p>
         Anxiety disorders are characterised by excessive fear and worry and
         related behavioural disturbances. Symptoms are severe enough to result
