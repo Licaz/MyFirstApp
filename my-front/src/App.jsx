@@ -20,7 +20,7 @@ function App() {
         <h2>{header}</h2>
         <p>{info}</p>
       </div>
-      <h1>Mental Healt Quiz</h1>
+      <h1>Mental Health Quiz</h1>
       <h3>{header}</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
