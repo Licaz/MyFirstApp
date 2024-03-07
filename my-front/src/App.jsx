@@ -21,14 +21,10 @@ function App() {
         <p>{info}</p>
       </div>
       <h1>Mental Health Quiz</h1>
-      <h3>{header}</h3>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+
       <Definition />
       <SymptomsList />
+
       <p className="read-the-docs">
         Please consult the HSE for more information
       </p>

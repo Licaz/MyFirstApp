@@ -1,5 +1,6 @@
 import React from "react";
 import "./SymptomsList.css";
+import { useState } from "react";
 
 const SympDep = [
   "continuous low mood or sadness",
@@ -40,26 +41,51 @@ const SympAnx = [
 ];
 
 export default function SymptomsList() {
-  //function for unclick
+  const [count, setCount] = useState(0);
+  const [adv, setAdv] = useState("");
+  function Add(i) {
+    if (i.target.checked) {
+      setCount((c) => c + 1);
+    } else {
+      setCount((c) => c - 1);
+    }
+  }
+
+  function Sub() {
+    if (count >= 16) {
+      setAdv("Consult your GP for more information");
+    } else {
+      setAdv("Go cycling, calm down. life is a journey!!!");
+    }
+    setCount(0);
+  }
+
   return (
     <>
-      <p>
+      <h3>
         Please, check the box if you have the symptoms for more than two weeks.
-      </p>
-      {SympDep.map((x) => (
+      </h3>
+      <div className="col">
         <div>
-          <input type="checkbox" id={x} name={x} />
-          <label for={x}>{x}</label>
+          {SympDep.map((x) => (
+            <div>
+              <input type="checkbox" id={x} name={x} onClick={(i) => Add(i)} />
+              <label for={x}>{x}</label>
+            </div>
+          ))}
         </div>
-      ))}
-      {SympAnx.map((x) => (
         <div>
-          <input type="checkbox" id={x} name={x} />
-          <label for={x}>{x}</label>
+          {SympAnx.map((x) => (
+            <div>
+              <input type="checkbox" id={x} name={x} onClick={Add} />
+              <label for={x}>{x}</label>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
+      <button onClick={Sub}>Submit</button>
+      <br />
+      <div className="adv">{adv}</div>
     </>
   );
 }
-
-//<input class="styled" type="button" value="Submit" />
